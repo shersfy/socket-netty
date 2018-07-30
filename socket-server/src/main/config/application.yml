@@ -1,0 +1,23 @@
+# server
+server:
+  port: 8080
+spring:
+  application:
+    name: socket-server
+  main:
+    banner-mode: 'off'
+# netty
+netty:
+  config:
+    port: 20188
+    loggerLevel: info
+# logging
+logging:
+  file: logs/${spring.application.name}.log
+  file.max-size: 100MB
+  level:
+    root: info
+  pattern:
+    dateformat: yyyy-MM-dd HH:mm:ss.SSS
+    level: '%5p'
+    
