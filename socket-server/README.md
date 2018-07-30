@@ -1,4 +1,4 @@
-# ACCEL-PPP Web Server
+# Socket Web Server
 1. Maven build
 ```
    mvn clean assembly:assembly
