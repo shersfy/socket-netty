@@ -13,7 +13,7 @@ if [ -z $javahome ]; then
 fi
 echo "JAVA_HOME=$javahome"
 
-mainClass=com.cmhy.boot.WebServer
+mainClass=org.shersfy.server.boot.SocketServerApplication
 pid=`ps aux | grep $mainClass | grep -v grep | awk '{print $2}'`
 if [ -n "$pid" ];then
   echo error: WebServer already exists
@@ -22,6 +22,6 @@ fi
 if [ ! -d "./logs" ]; then
   mkdir ./logs
 fi
-echo "Welcome to ACCEL-PPP"
+echo "Welcome to Socket"
 nohup $javahome/bin/java $JAVA_OPTS -cp libs/*:. $mainClass > logs/stdout.log 2>&1 &
 echo "`date '+%Y-%m-%d %H:%M:%S'` WebServer is running..."

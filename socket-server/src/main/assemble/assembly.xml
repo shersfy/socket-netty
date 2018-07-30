@@ -11,16 +11,16 @@
     <fileSets>
         <fileSet>
             <directory>src/main/bin</directory>
-            <outputDirectory>webserver/bin</outputDirectory>
+            <outputDirectory>socket-server/bin</outputDirectory>
         </fileSet>
         <fileSet>
             <directory>src/main/config</directory>
-            <outputDirectory>webserver/config</outputDirectory>
+            <outputDirectory>socket-server/config</outputDirectory>
         </fileSet>
     </fileSets>
         <dependencySets>
         <dependencySet>
-            <outputDirectory>webserver/libs</outputDirectory>
+            <outputDirectory>socket-server/libs</outputDirectory>
             <scope>runtime</scope>
         </dependencySet>
     </dependencySets>
